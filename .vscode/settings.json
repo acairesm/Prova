@@ -1,0 +1,5 @@
+{
+    "java.project.sourcePaths": ["Ex1", "Ex2"],
+    "code-runner.ignoreSelection": true,
+    "code-runner.runInTerminal": true
+}
