@@ -1,141 +1,52 @@
-CONFIGURAÇÕES DO VS CODE (versão 1.137.0)
-==========================================
+EXTENSÕES DO VS CODE (versão 1.137.0)
+=====================================
 
-1) EXTENSÕES
-------------
-
-Autocomplete / IntelliSense / Snippets
-  - redhat.java                         Language Support for Java (autocomplete Java)
-  - oracle.oracle-java                  Java (Oracle) - autocomplete/JDK
-  - ms-python.vscode-pylance            Pylance (autocomplete Python)
-  - ms-vscode.vscode-typescript-next    TypeScript Nightly
-  - typescriptteam.native-preview       TypeScript Native Preview
-  - bradlc.vscode-tailwindcss           Tailwind CSS IntelliSense
-  - christian-kohler.path-intellisense  Autocomplete de caminhos de arquivos
-  - dsznajder.es7-react-js-snippets     Snippets React/Redux (ES7+)
-  - rodrigovallades.es7-react-js-snippets  Snippets React (ES7)
-  - ms-dotnettools.csharp               C# (autocomplete C#)
-  - ms-dotnettools.csdevkit             C# Dev Kit
-
-Java
-  - vscjava.vscode-java-pack            Extension Pack for Java
-  - vscjava.vscode-java-debug           Debugger for Java
-  - vscjava.vscode-java-dependency      Project Manager for Java
-  - vscjava.vscode-java-test            Test Runner for Java
-  - vscjava.vscode-maven                Maven
-  - vscjava.vscode-gradle               Gradle
-
-Python
-  - ms-python.python                    Python
-  - ms-python.debugpy                   Python Debugger
-  - ms-python.vscode-python-envs        Python Environments
-
-.NET
-  - ms-dotnettools.vscode-dotnet-runtime  .NET Install Tool
-
-Ferramentas
-  - anthropic.claude-code               Claude Code
-  - eamodio.gitlens                     GitLens
-  - esbenp.prettier-vscode              Prettier (formatador)
-  - usernamehw.errorlens                Error Lens (erros na própria linha)
-  - formulahendry.code-runner           Code Runner (botão de rodar)
-  - ritwickdey.liveserver               Live Server
-  - hediet.vscode-drawio                Draw.io (diagramas UML)
-  - ms-azuretools.vscode-containers     Containers (Docker)
-  - ms-ceintl.vscode-language-pack-pt-br  Idioma Português (Brasil)
-
-Temas
+1) VISUAL (temas e ícones)
+--------------------------
   - zhuangtongfa.material-theme         One Dark Pro (tema em uso)
   - pkief.material-icon-theme           Material Icon Theme (ícones em uso)
   - enkia.tokyo-night                   Tokyo Night
   - ssmi.after-dark                     After Dark
   - guyutongxue.devcpp-theme            Dev-C++ Theme
 
-
-2) SETTINGS DO USUÁRIO (~/.config/Code/User/settings.json)
------------------------------------------------------------
-{
-  "workbench.iconTheme": "material-icon-theme",
-  "claudeCode.preferredLocation": "panel",
-  "files.autoSave": "afterDelay",
-  "git.autofetch": true,
-  "github.copilot.chat.generateCommitMessage": false,
-  "editor.columnSelection": true,
-  "hediet.vscode-drawio.resizeImages": null,
+Settings de visual (settings.json):
   "workbench.colorTheme": "One Dark Pro",
-  "js/ts.updateImportsOnFileMove.enabled": "always",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.iconTheme": "material-icon-theme",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "smooth",
   "editor.smoothScrolling": true,
-  "jdk.telemetry.enabled": true,
-}
-
-O que cada uma faz:
-  - files.autoSave = afterDelay        salva sozinho depois de alguns segundos
-  - git.autofetch = true               busca atualizações do git sozinho
-  - editor.columnSelection = true      seleção em coluna/bloco ativada
-  - emmet.includeLanguages             Emmet (autocomplete de HTML) dentro de JS/TS (JSX)
-  - js/ts.updateImportsOnFileMove      atualiza imports ao mover arquivo
-  - [typescriptreact] defaultFormatter Prettier formata arquivos .tsx
-  - cursorSmoothCaretAnimation / cursorBlinking / smoothScrolling   animações suaves
 
 
-3) SETTINGS DO PROJETO (.vscode/settings.json deste projeto)
--------------------------------------------------------------
-{
-    "java.project.sourcePaths": ["Ex1", "Ex2"],
-    "code-runner.ignoreSelection": true,
-    "code-runner.runInTerminal": true
-}
+2) JAVA
+-------
+  - vscjava.vscode-java-pack            Extension Pack for Java
+  - redhat.java                         Language Support for Java (autocomplete Java)
+  - oracle.oracle-java                  Java (Oracle)
+  - vscjava.vscode-java-debug           Debugger for Java
+  - vscjava.vscode-java-dependency      Project Manager for Java
+  - vscjava.vscode-java-test            Test Runner for Java
+  - vscjava.vscode-maven                Maven
+  - vscjava.vscode-gradle               Gradle
 
 
-4) ATALHOS E SNIPPETS
----------------------
-Nenhum atalho personalizado (keybindings.json não existe) e nenhum snippet próprio.
+3) IA
+-----
+  - anthropic.claude-code               Claude Code
 
 
-5) REINSTALAR TODAS AS EXTENSÕES (cole no terminal)
-----------------------------------------------------
-code --install-extension anthropic.claude-code
-code --install-extension bradlc.vscode-tailwindcss
-code --install-extension christian-kohler.path-intellisense
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension eamodio.gitlens
-code --install-extension enkia.tokyo-night
-code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.code-runner
-code --install-extension guyutongxue.devcpp-theme
-code --install-extension hediet.vscode-drawio
-code --install-extension ms-azuretools.vscode-containers
-code --install-extension ms-ceintl.vscode-language-pack-pt-br
-code --install-extension ms-dotnettools.csdevkit
-code --install-extension ms-dotnettools.csharp
-code --install-extension ms-dotnettools.vscode-dotnet-runtime
-code --install-extension ms-python.debugpy
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension ms-python.vscode-python-envs
-code --install-extension ms-vscode.vscode-typescript-next
-code --install-extension oracle.oracle-java
+INSTALAR TUDO (cole no terminal)
+--------------------------------
+code --install-extension zhuangtongfa.material-theme
 code --install-extension pkief.material-icon-theme
-code --install-extension redhat.java
-code --install-extension ritwickdey.liveserver
-code --install-extension rodrigovallades.es7-react-js-snippets
+code --install-extension enkia.tokyo-night
 code --install-extension ssmi.after-dark
-code --install-extension typescriptteam.native-preview
-code --install-extension usernamehw.errorlens
-code --install-extension vscjava.vscode-gradle
+code --install-extension guyutongxue.devcpp-theme
+code --install-extension vscjava.vscode-java-pack
+code --install-extension redhat.java
+code --install-extension oracle.oracle-java
 code --install-extension vscjava.vscode-java-debug
 code --install-extension vscjava.vscode-java-dependency
-code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-maven
-code --install-extension zhuangtongfa.material-theme
+code --install-extension vscjava.vscode-gradle
+code --install-extension anthropic.claude-code
